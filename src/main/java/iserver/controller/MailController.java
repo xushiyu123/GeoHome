@@ -49,12 +49,12 @@ public class MailController {
     private void SendMail(String address)
     {
         MailSenderInfo mailInfo = new MailSenderInfo();
-        mailInfo.setMailServerHost("smtp.qq.com");
+        mailInfo.setMailServerHost("");
         mailInfo.setMailServerPort("25");
         mailInfo.setValidate(true);
-        mailInfo.setUserName("xushiyu");
-        mailInfo.setPassword("kmxpnfouwkgvdadb");//授权码
-        mailInfo.setFromAddress("1633813476@qq.com");
+        mailInfo.setUserName("");
+        mailInfo.setPassword("");//授权码
+        mailInfo.setFromAddress("");
         mailInfo.setToAddress(address);
         mailInfo.setSubject("MyMail测试");
         mailInfo.setContent("我的邮件测试\n\rMy test mail\n\r");
